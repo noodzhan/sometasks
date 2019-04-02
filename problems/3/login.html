@@ -1,0 +1,53 @@
+<html>
+<title>用户登入</title>
+<head>
+<meta charset="utf-8"/>  <!--设置编码格式-->
+</head>
+<body>
+<form action="login.jsp" method="post" name="myform"> 
+用户名：<input type="text" name="UserName"></input></br></p>
+密码：  <input type="password" name="pwd"></input></br></p>
+<input type="submit" name="login" value="登入" onclick="check()" ></input>
+<input type="button" name="reSet" value="重置" onclick="f();"></input>
+
+</form>
+
+
+<script language="javascript">
+	
+	
+	//表单验证
+	function check(){
+		
+		if(myform.UserName.value==""){
+			alert("用户名为空");
+			myform.UserName.focus();
+			return false;
+		}
+		if(myform.pwd.value==""){
+			alert("密码为空");
+			myform.pwd.focus();
+			return false;
+
+		}
+		return true;
+		
+	
+	
+	}
+	
+	//重置点击事件处理
+	function f(){
+	
+		
+		myform.UserName.value="";
+		myform.pwd.value="";
+		
+	}
+	
+
+</script>
+
+
+</body>
+</html>

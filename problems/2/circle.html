@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>圆的半径</title>
+</head>
+
+<body>
+<form name="myform">
+半径：<input tpye="text" name="text1">  <br/>
+<input type="button" name="button1" onclick="getArea()" value="计算">
+</form>
+
+<script language="javascript">
+	
+	function getArea(){
+		
+		var r=document.myform.text1.value;
+		
+		//document.write("测试输出语句"+"<br/>");
+		
+		var area=3.14*r*r;
+		document.write("圆的面积："+area);
+	}
+
+</script>
+</body>
+</html>
